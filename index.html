@@ -1,187 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Abinaya | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="header-area">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a href="#index.html" class="navbar-brand">Resume</a>
-                <button class="navbar-toggler" type="button"></button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link active" data-scroll-nav="0">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link " data-scroll-nav="1">About</a></li>
-                        <li class="nav-item"><a href="#project" class="nav-link " data-scroll-nav="2">Project</a></li>
-                        <li class="nav-item"><a href="#skills" class="nav-link " data-scroll-nav="3">Skills</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link " data-scroll-nav="6">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="home" id="home" data-scroll-index="0">
-            <div class="header-content d-flex align-items-center">
-                <div id="parallax">
-                </div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="home-text ">
-                                <h4>HELLO, I'M</h4>
-                                <h1>ABINAYA</h1>
-                                <p>A Full stack Developer</p>
-                                <div class="home-btn">
-                                    <a href="RESUME.pdf" class="btn-1" onclick="viewAndDownload(event, 'RESUME.pdf')">Download Resume</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="home-img d-none d-lg-block">
-                                <img src="C:\Users\abina\Downloads\IMG-20250201-WA0042-removebg-preview.png" alt="Abinaya">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <section class="about-area section-padding d-flex justify-content-center align-items-center text-center" id="about" data-scroll-index="1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="about-content">
-                    <div class="section-title">
-                        <h4>About</h4>
-                        <h2>Abinaya <span> , a Full Stack Developer </span></h2>
-                    </div>
-                        <p class="details">I specialize in frontend and backend development, building scalable web applications with modern technologies.</p>
-                        <ul class="list-unstyled">
-                            <li><span>Date of Birth:</span> 21 October 2004</li>
-                            <li><span>Email:</span> abia51443@gmail.com</li>
-                            <li><span>Phone:</span> +91 8012959877</li>
-                            <li><span>Location:</span> Coimbatore</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#designs">Designs</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="page home">
+    <h1>Hi, I'm <span>Abinaya</span></h1>
+    <p>Front-End Developer & UI/UX Designer</p>
+</section>
+
+<section id="about" class="page">
+    <h1>About Me</h1>
+    <p>
+        I am a motivated and enthusiastic Computer Science student with a strong passion for front-end development and UI/UX design. Skilled in building responsive, visually appealing, and user-friendly web interfaces using HTML, CSS, and JavaScript, I enjoy transforming ideas into functional digital solutions. I am currently learning Figma to enhance my skills in wireframing, prototyping, and modern design practices.
+
+As a fresher, I am eager to gain hands-on experience, contribute creative solutions to real-world projects, and continuously grow my technical and design skills. Detail-oriented, curious, and committed to learning, I strive to combine functionality with aesthetics to create engaging digital experiences. I am ready to take on challenges, collaborate effectively, and bring fresh ideas to any team or project.
+    </p>
+
+    <a href="C:\Users\abina\Downloads\ABINAYA RESUME.pdf" download class="btn">Download CV</a>
+</section>
+
+<section id="skills" class="page bg">
+    <h1>Skills</h1>
+
+    <div class="group">
+        <h3>Front-End</h3>
+        <div class="cards">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
         </div>
-    </section>
-    <section class="project section-padding" id="project">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title">
-                    <h4>Project</h4>
-                    <h2>Project<span> what I did it</span></h2>
-                </div>
-            </div>
+    </div>
+
+    <div class="group">
+        <h3>Design Tools</h3>
+        <div class="cards">
+            <div class="card">Figma</div>
+            <div class="card">Canva</div>
+            <div class="card">Adobe XD</div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="project-item">
-                    <h3>Restaurant Menu Webpage</h3>
-                    <p>Developed a web-based restaurant menu page to showcase various food items, prices, and descriptions. The platform features an interactive, user-friendly interface with responsive design.</p>
+    </div>
+
+    <div class="group">
+        <h3>Programming & Tools</h3>
+        <div class="cards">
+            <div class="card">Java</div>
+            <div class="card">SQL</div>
+            <div class="card">Git & GitHub</div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="page">
+    <h1>Projects</h1>
+    <div class="cards">
+        <div class="card">
+            <h4>Portfolio Website</h4>
+            <p>Developed a personal portfolio website to showcase skills and projects.
+Designed a simple and professional layout to highlight personal profile and project work effectively.
+</p>
+        </div>
+        <div class="card">
+            <h4>E-Commerce Application</h4>
+            <p>Built a full-stack e-commerce application with login and cart features using HTML, CSS, Servlets, and MySQL.
+Collaborated with team members to implement secure data handling and structured application flow.
+</p>
+        </div>
+        <div class="card">
+            <h4>Restaurant Landing Page</h4>
+            <p>Built a responsive restaurant landing page with menu, reviews, and booking using HTML and CSS.
+               Focused on clean layout responsive structure, and user-friendly navigation for better customer experience.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="designs" class="page bg">
+    <h1>Designs</h1>
+    <div class="cards">
+        <div class="card">
+            <h4>Burger Shop UI</h4>
+            <p>Designed a multi-page burger shop web UI in Figma, including Home, Menu, About, Login, and Sign-Up screens with consistent visual styling.
+            Created high-fidelity designs and interactive prototypes focusing on intuitive navigation, user flow, and clean layout structure.
+            Applied UI/UX principles such as typography hierarchy, color consistency, and component-based design to enhance usability and user experience.
+            </p>
+        </div>
+        <div class="card">
+            <h4>Intranet Portal – Home Page</h4>
+            <p>Designed the Home Page of an Intranet Portal to serve as a central hub for employees.
+Created a responsive and user-friendly interface with navigation, announcements, quick links, and task management.
+Focused on intuitive design and accessibility to enhance employee engagement and productivity.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates" class="page">
+    <h1>Certificates</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="D:\my-project\port\figma.jpg" alt="UI/UX Design Certificate">
+            <p>UI/UX Design – Udemy</p>
+        </div>
+        <div class="card">
+            <img src="D:\my-project\port\html.jpg" alt="Web Design Certificate">
+            <p>Web Design with HTML & CSS – Udemy</p>
+        </div>
+        <div class="card">
+            <img src="D:\my-project\port\java.jpg" alt="Java Programming Certificate">
+            <p>Java Programming – Udemy</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="page bg">
+    <h1>Get <span class="highlight">In Touch</span></h1>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <div>
+                    <h4>Location</h4>
+                    <p>Othakkalmandapam, Coimbatore</p>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="project-item">
-                    <h3>Predictive Analysis of Stock Market Trends</h3>
-                    <p>Developed a predictive model to forecast future sales based on historical data, enabling businesses to
-                        plan inventory, marketing, and staffing. The platform processes data, performs trend analysis, and
-                        visualizes forecasts with actionable insights.</p>
+            <div class="info-item">
+                <div class="icon">✉️</div>
+                <div>
+                    <h4>Write to us at</h4>
+                    <p>abia51443@gmail.com</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="project-item">
-                    <h3>Portfolio</h3>
-                    <p>A portfolio website is a personal platform showcasing skills, and projects, serving as a digital resume to attract clients or employers. It highlights project, skills, and contact details, creating a strong online presence.</p>
+
+            <div class="info-item">
+                <div class="icon">📞</div>
+                <div>
+                    <h4>Call us on</h4>
+                    <p>+91 8012959877</p>
                 </div>
             </div>
         </div>
-    </section>
-            <section class="img-gallery section-padding" id="skills" data-scroll-index="3">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="section-title">
-                                <h4>Skills</h4>
-                                <h2>Skills<span> I gained</span></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Languages</h3>
-                                <p>C, Java, JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Frameworks</h3>
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Tools</h3>
-                                <p>MySQL, Git, GitHub</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Web Technologies</h3>
-                                <p>HTML, CSS, JSP, Servlet</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Platforms</h3>
-                                <p>Eclipse, IntelliJ IDEA, IDLE, GitHub, VS Code</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-work text-center mt-30">
-                                <h3>Soft Skills</h3>
-                                <p>Team Leadership, Collaboration, Problem-Solving, Communication Skills</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact section-padding d-flex justify-content-center align-items-center text-center" id="contact">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title">
-                            <div class="contact-form">
-                                <h4>Contact</h4>
-                                <h2>contact <span>with me</span></h2>
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Your Email" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Phone" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea placeholder="Your Message" class="form-control"></textarea>
-                                    </div>
-                                    <button class="btn-2">Send Message</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    <script src="main.js"></script>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Your Phone">
+                <input type="text" placeholder="Subject">
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
